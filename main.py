@@ -12,7 +12,7 @@ if st.button("Scrape Site"):
     body_content = extract_body_content(result)
     cleaned_content = clean_body_content(body_content)
 
-    st.session_state.dom__content = cleaned_content
+    st.session_state.dom_content = cleaned_content
 
     with st.expander("View DOM Content"):
         st.text_area("DOM Content", cleaned_content, height=300)
